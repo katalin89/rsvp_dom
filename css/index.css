@@ -1,0 +1,101 @@
+body{
+    background-color: antiquewhite;
+}
+
+
+
+.container1{
+background-image: url("../images/vinter.jpg");
+
+background-size: cover;
+
+width: 100%;
+
+height: 300px;
+
+border: 2px solid red;
+
+}
+
+.rsvp{
+    border: 2px solid red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 150px;
+    color:white;
+}
+
+.myCode{
+    border: 2px solid red ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color:  rgb(108, 80, 80);
+
+    font-size: large;
+}
+
+/* .input{
+    border: 2px solid red;
+    display:  flex;
+    align-items:flex-end;
+    justify-content: center;
+    margin-top: 50px;
+
+    margin-left: 600px;
+;
+} */
+
+.input1{
+    border:  2px solid red;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+    gap:20px;
+
+    border-top: 100px;
+}
+
+
+.buttons{
+    display: flex;
+    flex-direction: row;
+    gap:20px
+}
+
+.container2{
+    display: flex;
+    flex-direction: row;
+}
+
+.card{
+    display:  flex;
+    flex-direction: column;
+    background-color: white;
+    border: 2px solid brown;
+    width: 200px;
+}
+
+button{
+    background-color: burlywood;
+}
+
+.confirmed{
+    border: 2px solid red;;
+    display: flex;
+    flex-direction: row;
+}
+
+.invitees{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.resp{
+    display: flex;
+    flex-direction: row;
+}
