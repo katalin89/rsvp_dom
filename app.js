@@ -47,11 +47,47 @@ checkB.addEventListener("click",()=>{
         hideUnconfirmed(listContainer.children);
     } else {
         showAll(listContainer.children);
-    }
+    }s
 
 })
 
+let btnEdit=document.querySelector('.edit');
 
 
-//display non
+
+listContainer.addEventListener("click",(e)=>{
+    let ob=e.target;
+    if(ob.classList.contains("edit")){
+
+        let card=ob.parentNode.parentNode;
+        let text =ob.parentNode.parentNode.children[0].textContent;
+
+        let inpt = document.createElement("input");
+        inpt.type="text";
+        inpt.value=text;
+        let children=card.children[0]
+        card.insertBefore(inpt,children);
+        card.removeChild(children);
+        //console.log(document.getElementsByTagName('h1'));
+        console.log(card);
+
+        
+        // let btnSave=document.createElement('button');
+        // btnSave.type='button';
+        // btnSave.value='save';
+        // let child=card.children[3];
+        // card.insertBefore(inpt,child);
+        // card.removeChild(children);
+
+        // console.log(card);
+        let btnSave=document.querySelector('.edit')
+        btnSave.textContent="save";
+        
+
+    }
+});
+
+
+
+
 

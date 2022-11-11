@@ -46,3 +46,16 @@ function showAll(arr){
     }
 }
 
+// function editText(){
+//     let inp=console.;
+//     createElement(inp);
+// }
+
+
+// function  retCard(arr){
+//     for(let i=0;i<arr.length;i++){
+//         let child=arr[i].querySelector('.edit');
+//         if(child)
+
+//     }
+// }
