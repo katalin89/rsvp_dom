@@ -69,21 +69,30 @@ listContainer.addEventListener("click",(e)=>{
         card.insertBefore(inpt,children);
         card.removeChild(children);
         //console.log(document.getElementsByTagName('h1'));
-        console.log(card);
-
         
-        // let btnSave=document.createElement('button');
-        // btnSave.type='button';
-        // btnSave.value='save';
-        // let child=card.children[3];
-        // card.insertBefore(inpt,child);
-        // card.removeChild(children);
+        ob.textContent="save";
 
-        // console.log(card);
-        let btnSave=document.querySelector('.edit')
-        btnSave.textContent="save";
+        ob.classList.remove("edit");
+
+        ob.classList.add("save");
+    }else if(ob.classList.contains("save")){
+
+        let card=ob.parentNode.parentNode;
+        let text =ob.parentNode.parentNode.children[0].value;
+
+        let h1 = document.createElement("h1");
+        h1.textContent=text;
+
+        let children=card.children[0]
+        card.insertBefore(h1,children);
+        card.removeChild(children);
+        //console.log(document.getElementsByTagName('h1'));
         
+        ob.textContent="edit";
 
+        ob.classList.remove("save");
+
+        ob.classList.add("edit");
     }
 });
 
